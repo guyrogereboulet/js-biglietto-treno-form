@@ -4,12 +4,38 @@
   box-sizing: border-box;
 }
 
-.wrapper {
-  width: 80%;
-  margin: 0 auto;
-  background-color: red;
+
+body {
+  background-color: #B91350;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+.wrapper h2 {
+  color: white;
+  text-align: center;
 }
 
 .top-container {
+  width: 80%;
+  margin: 0 auto;
   background-color: white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: center;
+}
+
+.input::placeholder {
+  text-align: center;
 }
