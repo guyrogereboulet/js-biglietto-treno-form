@@ -43,8 +43,8 @@ function() {
    (prezzoBigliettoSenzaSconto);
   }
 
-  var carrozza = Math.floor(Math.ramdom() + 9) +1;
-  var cp = Math.floor(Math.random() + (100000 - 90000 + 1 )) + 90000;
+  var carrozza = Math.floor(Math.random() * 9) +1;
+  var cp = Math.floor(Math.random() * (100000 - 90000 + 1 )) + 90000;
 
 
   document.getElementById('nome-passegero').innerHTML = nomeUtente;
@@ -53,12 +53,16 @@ function() {
   document.getElementById('carrozza').innerHTML = carrozza;
   document.getElementById('codice-cp').innerHTML = cp;
 
+  var bigliettoDiv = document.getElementById('biglietto');
+  bigliettoDiv.classList.remove('hidden');
+  bigliettoDiv.classList.add('show');
+
  }
 
 );
 
 
-var = buttonAnnulla = document.getElementById('annulla');
+var buttonAnnulla = document.getElementById('annulla');
 buttonAnnulla.addEventListener( 'click',
   function() {
     document.getElementById('nome-passegero').innerHTML = '';
@@ -66,5 +70,14 @@ buttonAnnulla.addEventListener( 'click',
     document.getElementById('costo-biglietto').innerHTML = '';
     document.getElementById('carrozza').innerHTML = '';
     document.getElementById('codice-cp').innerHTML = '';
+
+
+    document.getElementById('km').value = '';
+    document.getElementById("fascia-eta").value = '';
+    document.getElementById("nome-utente").value = '';
+    
+    var bigliettoDiv = document.getElementById('biglietto')
+    bigliettoDiv.classList.remove('show');
+    bigliettoDiv.classList.add('hidden');
   }
-)
+);
