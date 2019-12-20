@@ -75,3 +75,27 @@ select:focus {
   background-color: #B91350;
   color: white;
 }
+
+.btn {
+  display: inline-block;
+  background-color: lightgrey;
+  color: #B91350;
+  border: 1px solid grey;
+  padding: 10px;
+  margin: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: white;
+  background-color: grey;
+}
+
+.bottom-container {
+  background-color: white;
+  width: 80%;
+  margin: 0 auto;
+}
