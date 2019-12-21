@@ -109,6 +109,52 @@ select:focus {
 
 .bottom-container {
   background-color: white;
+  padding: 20px;
   width: 80%;
   margin: 0 auto;
+  border-radius: 5px;
+}
+
+table {
+  height: 200px;
+  width: 100%;
+}
+
+
+.grey {
+  background-color: grey;
+}
+
+.row_bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  border-top: 1px solid black;
+  border-bottom: 1px solid grey;
+}
+
+.row_bottom .col {
+  padding: 0;
+}
+
+
+.col.grey {
+  padding-top: 40px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.padding {
+  padding:20px;
+}
+
+
+.wrapper h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+th,td {
+  text-align: left;
+  padding: 15px;
 }
